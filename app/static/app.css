@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,500");
+
+/* Global */
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar {
+    background: #334;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #889;
+}
+
+body {
+    background-color: #334;
+    color: #DDE;
+    font-family: "Roboto", sans-serif;
+    /* Debug */
+    height: 2000px;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #FFF;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-weight: 100;
+}
+
+a {
+    font-weight: 500;
+    color: #DDE;
+}
+
+
+/* Button */
+
+.btn-one {
+    border-width: 0;
+    border-bottom-width: 2px;
+}
+
+.btn-xlg {
+    padding: 15px 30px;
+    font-size: 1.2em;
+}
+
+
+/* Cookie button */
+
+.btn-cookie {
+    color: #8a4b38;
+    background-color: #d99e82;
+    border-color: #d99e82;
+}
+
+.btn-link-cookie {
+    color: #d99e82;
+}
+
+.btn-outline-cookie {
+    color: #d99e82;
+    border-color: #d99e82;
+}
+
+.btn-outline-cookie:hover,
+.btn-outline-cookie:focus,
+.btn-link-cookie:hover,
+.btn-link-cookie:focus {
+    color: #8a4b38;
+    background-color: #d99e82;
+    border-color: #d99e82;
+}
+
+.btn-cookie:hover,
+.btn-cookie:focus {
+    color: #d99e82;
+    background-color: #8a4b38;
+    border-color: #8a4b38;
+}
+
+
+/* Cookie color */
+
+.text-cookie {
+    color: #d99e82;
+}
+
+.bg-cookie {
+    background-color: #8a4b38;
+}
+
+
+/* Cover */
+
+.cover {
+    background-position: center;
+    background-size: cover;
+    min-height: 400px;
+    box-shadow: inset 0 0 0 10000px rgba(51, 51, 68, 0.75);
+}
+
+
+/* Navbar */
+
+nav {
+    background-color: #8a4b38;
+    overflow-x: auto;
+    padding: 0 !important;
+}
+
+.nav-link {
+    padding: 24px 10px !important;
+    transition: all 100ms ease-in-out;
+}
+
+.nav-link:hover {
+    box-shadow: inset 0 0 0 10000px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Sections */
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#main {
+    background-image: url("img/bg/12.jpg");
+    background-attachment: fixed;
+    padding-top: 10%;
+}
+
+
+/* Media */
+
+@media (min-width: 991px) {
+    #main h1 {
+        font-size: 6em;
+    }
+    #main span {
+        color: #d99e82;
+    }
+    #main p {
+        font-size: 2em;
+    }
+}
