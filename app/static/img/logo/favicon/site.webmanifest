@@ -1,0 +1,19 @@
+{
+    "name": "CookieMP",
+    "short_name": "CookieMP",
+    "icons": [
+        {
+            "src": "/static/img/logo/favicon/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/static/img/logo/favicon/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#8a4b38",
+    "background_color": "#8a4b38",
+    "display": "standalone"
+}

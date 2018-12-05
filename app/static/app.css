@@ -21,8 +21,6 @@ body {
     background-color: #334;
     color: #DDE;
     font-family: "Roboto", sans-serif;
-    /* Debug */
-    height: 2000px;
 }
 
 h1 {
@@ -121,7 +119,9 @@ nav {
     overflow-x: auto;
     padding: 0 !important;
 }
-
+.navbar-brand img {
+    width: 48px;
+}
 .nav-link {
     padding: 24px 10px !important;
     transition: all 100ms ease-in-out;
