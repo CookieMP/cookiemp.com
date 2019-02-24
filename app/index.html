@@ -20,7 +20,7 @@
   <link rel="shortcut icon" href="static/img/logo/favicon/favicon.ico">
   <meta name="msapplication-TileColor" content="#8a4b38">
   <meta name="msapplication-config" content="static/img/logo/favicon/browserconfig.xml">
-  <meta name="theme-color" content="#8a4b38">
+  <meta name="theme-color" content="#393549">
 
   <!-- Styles -->
   <link rel="stylesheet" href="lib/bootstrap/bootstrap.css">
@@ -28,15 +28,44 @@
 </head>
 
 <body>
-<!-- Main -->
-<section id="main" class="container-fluid cover">
-  <div class="container">
+
+<!-- Wrapper -->
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+
+  <!-- Header -->
+  <header class="mb-auto">
+    <nav class="navbar navbar-expand">
+      <div class="container">
+        <div class="collapse navbar-collapse justify-content-center">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Forum</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Discord</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Servers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Donate</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main class="container">
+
+    <!-- Content -->
     <div class="media">
       <div class="media-body">
         <!-- Title -->
         <h1>Cookie <span>MP</span></h1>
         <!-- Subtitle -->
-        <p>New fucking multilayer mod for Grand Theft Auto V.</p>
+        <p>New ducking multilayer mod for Grand Theft Auto V.</p>
         <!-- Buttons -->
         <div class="mt-4">
           <a href="#" class="btn btn-lg btn-outline-cookie">Download</a>
@@ -44,41 +73,68 @@
         </div>
       </div>
     </div>
-  </div>
-</section>
 
-<!-- Navbar -->
-<nav class="navbar sticky-top navbar-expand navbar-dark">
-  <div class="container">
-    <!-- Brand -->
-    <a class="navbar-brand" href="/">
-      <img src="static/img/logo/logo.svg" alt="Cookie MP">
-    </a>
-    <!-- Navs -->
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Download</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Media</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Forum</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Discord</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Servers</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Donate</a>
-      </li>
-    </ul>
+    <!-- Sidebar button (right) -->
+    <div class="sidebar-button sidebar-button-right" onclick="toggleSidebar('right')">
+      <button class="btn btn-outline-cookie">
+        <i class="fa fa-fw fa-envelope"></i>
+      </button>
+    </div>
+
+    <!-- Sidebar button (left) -->
+    <div class="sidebar-button sidebar-button-left" onclick="toggleSidebar('left')">
+      <button class="btn btn-outline-cookie">
+        <i class="fa fa-fw fa-info"></i>
+      </button>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="mt-auto">CookieMP.com <i class="fa fa-copyright"></i> 2019</footer>
+</div>
+
+<!-- Sidebar (right) -->
+<div class="sidebar sidebar-right" onclick="toggleSidebar('right')">
+  <div class="sidebar-inner" onclick="toggleSidebar('right')">
+    <div class="container">
+      <h2 class="font-weight-bold">SICK TITLE HERE</h2>
+      <hr>
+      <p>Some text goes here then some over there.</p>
+      <p>Repeating some text goes here then some over there.</p>
+      <p><b>Image Here</b></p>
+      <p><img src="static/img/bg/2.jpg" alt="Image" class="mt-2"></p>
+      <hr>
+      <p>
+        <button class="btn btn-cookie">Button</button>
+        <button class="btn btn-outline-cookie">Another One</button>
+        <button class="btn btn-outline-cookie">Don't</button>
+      </p>
+    </div>
   </div>
-</nav>
+</div>
+
+<!-- Sidebar (left) -->
+<div class="sidebar sidebar-left" onclick="toggleSidebar('left')">
+  <div class="sidebar-inner" onclick="toggleSidebar('left')">
+    <div class="container">
+      <h2 class="font-weight-bold">SICK TITLE HERE</h2>
+      <hr>
+      <p>Some text goes here then some over there.</p>
+      <p>Repeating some text goes here then some over there.</p>
+      <p><b>Image Here</b></p>
+      <p><img src="static/img/bg/2.jpg" alt="Image" class="mt-2"></p>
+      <hr>
+      <p>
+        <button class="btn btn-cookie">Button</button>
+        <button class="btn btn-outline-cookie">Another One</button>
+        <button class="btn btn-outline-cookie">Don't</button>
+      </p>
+    </div>
+  </div>
+</div>
 
 <!-- Scripts -->
+<script src="lib/fontawesome/fontawesome.js" defer></script>
 <script src="static/app.js"></script>
 </body>
 

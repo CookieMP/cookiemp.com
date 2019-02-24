@@ -2,25 +2,24 @@
 
 /* Global */
 
-::-webkit-scrollbar-track,
 ::-webkit-scrollbar {
-    background: #334;
+    display: none;
 }
 
-::-webkit-scrollbar {
-    width: 4px;
-    height: 4px;
-    background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #889;
+html, body {
+    height: 100%;
 }
 
 body {
-    background-color: #334;
-    color: #DDE;
+    display: flex;
     font-family: "Roboto", sans-serif;
+    color: #DDE;
+    box-shadow: inset 0 0 0 10000px rgba(51, 51, 68, 0.75);
+    background-color: #334;
+    background-image: url("img/bg/12.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 
 h1 {
@@ -44,6 +43,79 @@ a {
 }
 
 
+/* Cover container */
+
+.cover-container {
+    position: fixed;
+    height: 100% !important;
+    width: 100% !important;
+    overflow-y: auto;
+}
+
+
+/* Navbar */
+
+nav {
+    overflow-x: auto;
+    padding: 0 !important;
+}
+
+.navbar-brand img {
+    width: 48px;
+}
+
+
+.nav-link:hover {
+    box-shadow: inset 0 0 0 10000px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+
+
+/* Main */
+
+main {
+    text-align: center;
+    padding-right: 25px !important;
+    padding-left: 25px !important;
+}
+
+main span {
+    color: #d99e82;
+}
+
+main .btn {
+    margin-bottom: 5px;
+}
+
+@media (min-width: 576px) {
+
+    main {
+        text-align: left;
+    }
+
+    main h1 {
+        font-size: 6em;
+    }
+
+    main p {
+        font-size: 2em;
+    }
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    font-weight: lighter;
+    opacity: 0.3;
+}
+
+footer:hover {
+    opacity: 1;
+}
+
+
 /* Button */
 
 .btn-one {
@@ -54,6 +126,10 @@ a {
 .btn-xlg {
     padding: 15px 30px;
     font-size: 1.2em;
+}
+
+.btn-link {
+    text-decoration: none !important;
 }
 
 
@@ -72,6 +148,7 @@ a {
 .btn-outline-cookie {
     color: #d99e82;
     border-color: #d99e82;
+    background: transparent;
 }
 
 .btn-outline-cookie:hover,
@@ -102,60 +179,99 @@ a {
 }
 
 
-/* Cover */
+/* Sidebar */
 
-.cover {
-    background-position: center;
-    background-size: cover;
-    min-height: 400px;
-    box-shadow: inset 0 0 0 10000px rgba(51, 51, 68, 0.75);
+.sidebar {
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    opacity: 0;
+    color: #fff;
+    text-align: left;
+}
+
+.sidebar-open {
+    z-index: 10000;
+    opacity: 1;
+}
+
+.sidebar-right {
+    right: 0;
+}
+
+.sidebar-left {
+    left: 0;
+}
+
+.sidebar .sidebar-inner {
+    background-color: rgba(138, 75, 56, 0.75);
+    padding: 15px 5px;
+    overflow-y: auto;
+    border: 0 solid rgb(138, 75, 56);
+    max-width: 75% !important;
+    width: 400px;
+}
+
+.sidebar,
+.sidebar .sidebar-inner {
+    position: fixed;
+    top: 0;
+    transition: all 300ms ease-in-out;
+    height: 100%;
+}
+
+.sidebar-right .sidebar-inner {
+    border-left-width: 2px;
+    right: -40%;
+}
+
+.sidebar-left .sidebar-inner {
+    border-right-width: 2px;
+    left: -40%;
+}
+
+.sidebar-open.sidebar-left .sidebar-inner {
+    left: 0;
+}
+
+.sidebar-open.sidebar-right .sidebar-inner {
+    right: 0;
+}
+
+.sidebar p {
+    font-size: 1.3em;
+    line-height: 1.2em;
+}
+
+.sidebar img {
+    max-width: 100%;
+    border-radius: 3px;
+}
+
+.sidebar hr {
+    border-color: rgba(255, 255, 255, 0.05);
+    margin-right: -30px;
+    margin-left: -30px;
 }
 
 
-/* Navbar */
+/* Sidebar buttons */
 
-nav {
-    background-color: #8a4b38;
-    overflow-x: auto;
-    padding: 0 !important;
-}
-.navbar-brand img {
-    width: 48px;
-}
-.nav-link {
-    padding: 24px 10px !important;
-    transition: all 100ms ease-in-out;
+.sidebar-button .btn {
+    margin-top: 15px;
+    position: absolute;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    top: 50%;
+    border-color: rgba(138, 75, 56, 0.75);
 }
 
-.nav-link:hover {
-    box-shadow: inset 0 0 0 10000px rgba(0, 0, 0, 0.1);
+.sidebar-button-left .btn {
+    left: -10px;
+    border-radius: 0 40px 40px 0;
 }
 
-
-/* Sections */
-
-section {
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
-#main {
-    background-image: url("img/bg/12.jpg");
-    background-attachment: fixed;
-    padding-top: 10%;
-}
-
-
-/* Media */
-
-@media (min-width: 991px) {
-    #main h1 {
-        font-size: 6em;
-    }
-    #main span {
-        color: #d99e82;
-    }
-    #main p {
-        font-size: 2em;
-    }
+.sidebar-button-right .btn {
+    right: -10px;
+    border-radius: 40px 0 0 40px;
 }
