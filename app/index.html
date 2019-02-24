@@ -29,9 +29,9 @@
 
 <body>
 
-<!-- Main -->
-<section id="main" class="container-fluid cover">
-  <div class="container">
+<!-- Wrapper -->
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+
   <!-- Header -->
   <header class="mb-auto">
     <nav class="navbar navbar-expand">
@@ -55,6 +55,11 @@
       </div>
     </nav>
   </header>
+
+  <!-- Main -->
+  <main class="container">
+
+    <!-- Content -->
     <div class="media">
       <div class="media-body">
         <!-- Title -->
@@ -102,8 +107,6 @@
         <button class="btn btn-outline-cookie">Don't</button>
       </p>
     </div>
-  </div>
-</div>
 
 <!-- Sidebar (left) -->
 <div class="sidebar sidebar-left" onclick="toggleSidebar('left')">
@@ -122,7 +125,10 @@
         <button class="btn btn-outline-cookie">Don't</button>
       </p>
     </div>
-  </div>
+
+    </div>
+  </main>
+
   <!-- Footer -->
   <footer class="mt-auto">CookieMP.com <i class="fa fa-copyright"></i> 2019</footer>
 </div>
