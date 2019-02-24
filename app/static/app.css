@@ -187,6 +187,7 @@ footer:hover {
     width: 100%;
     opacity: 0;
     color: #fff;
+    text-align: left;
 }
 
 .sidebar-open {
@@ -194,13 +195,21 @@ footer:hover {
     opacity: 1;
 }
 
+.sidebar-right {
+    right: 0;
+}
+
+.sidebar-left {
+    left: 0;
+}
+
 .sidebar .sidebar-inner {
     background-color: rgba(138, 75, 56, 0.75);
-    padding: 30px 15px 15px;
+    padding: 15px 5px;
     overflow-y: auto;
     border: 0 solid rgb(138, 75, 56);
-    width: 40%;
-    min-width: 400px;
+    max-width: 75% !important;
+    width: 400px;
 }
 
 .sidebar,
@@ -245,30 +254,24 @@ footer:hover {
     margin-left: -30px;
 }
 
+
 /* Sidebar buttons */
 
-.sidebar-button {
-    position: absolute;
-    top: calc(50% - 70px);
-}
-
-.sidebar-button-left {
-    left: 15px;
-}
-
-.sidebar-button-right {
-    right: 15px;
-}
-
 .sidebar-button .btn {
-    border-radius: 1000px;
-    width: 40px;
-    height: 40px;
-    padding: 0;
+    margin-top: 15px;
+    position: absolute;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    top: 50%;
+    border-color: rgba(138, 75, 56, 0.75);
 }
 
+.sidebar-button-left .btn {
+    left: -10px;
+    border-radius: 0 40px 40px 0;
 }
 
-}
-
+.sidebar-button-right .btn {
+    right: -10px;
+    border-radius: 40px 0 0 40px;
 }
