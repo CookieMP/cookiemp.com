@@ -147,6 +147,7 @@ footer:hover {
 }
 
 .btn-outline-cookie {
+    display: inline-block;
     color: #d99e82;
     border-color: #d99e82;
     background: transparent;
@@ -208,6 +209,7 @@ footer:hover {
     background-color: rgba(138, 75, 56, 0.75);
     padding: 15px 5px;
     overflow-y: auto;
+    overflow-x: hidden;
     border: 0 solid rgb(138, 75, 56);
     max-width: 75% !important;
     width: 400px;
@@ -245,7 +247,6 @@ footer:hover {
 }
 
 .sidebar img {
-    max-width: 100%;
     border-radius: 3px;
 }
 
@@ -275,4 +276,70 @@ footer:hover {
 .sidebar-button-right .btn {
     right: -10px;
     border-radius: 40px 0 0 40px;
+}
+
+
+/* Modal windows */
+
+.modal-window {
+    position: fixed;
+    background-color: rgba(23, 23, 23, 0.79);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.modal-window:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-window>div {
+    width: 50%;
+    height: 50%;
+    overflow-y: auto;
+    position: relative;
+    margin: 10% auto;
+    padding: 2rem;
+    background: #1d1d1d;
+    color: #888;
+}
+  
+.modal-window header {
+    font-weight: bold;
+}
+
+.modal-close {
+    color: #aaa;
+    line-height: 50px;
+    font-size: 80%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 70px;
+    text-decoration: none;
+}
+
+.modal-close:hover {
+    color: #EEE;
+}
+
+.modal-window h1 {
+    font-size: 150%;
+    margin: 0 0 15px;
+}
+
+.modal-item {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
 }

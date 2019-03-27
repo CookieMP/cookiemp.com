@@ -9,7 +9,7 @@
   <meta name="author" content="Cookie MP">
 
   <!-- Title -->
-  <title>Cookie MP &bull; Multiplayer mod for GTA V</title>
+  <title>CookieMP &bull; Multiplayer mod for GTA:V</title>
 
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="static/img/logo/favicon/apple-touch-icon.png">
@@ -48,7 +48,7 @@
               <a class="nav-link" href="#">Servers</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Donate</a>
+              <a class="nav-link" href="https://paypal.me/AmyrAhmady">Donate</a>
             </li>
           </ul>
         </div>
@@ -65,11 +65,19 @@
         <!-- Title -->
         <h1>Cookie <span>MP</span></h1>
         <!-- Subtitle -->
-        <p>New ducking multilayer mod for Grand Theft Auto V.</p>
+        <p>Super light-weight multiplayer modification for GTA:V.</p>
         <!-- Buttons -->
         <div class="mt-4">
-          <a href="#" class="btn btn-lg btn-outline-cookie">Download</a>
-          <a href="#" class="btn btn-lg btn-link btn-link-cookie">Media</a>
+          <a href="#open-download-modal" class="btn btn-lg btn-outline-cookie">Download</a>
+          <div id="open-download-modal" class="modal-window">
+            <div>
+              <a href="#modal-close" title="Close" class="modal-close">close &times;</a>
+              <h1>Downloads</h1>
+              <br>
+              <p>Unfortunately CookieMP is still in development stage. You can come back later when we released our beta version.</p>
+              <p>Please join our <a href="https://discord.gg/M76m6qC">Discord</a> for project news.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -97,18 +105,21 @@
 <div class="sidebar sidebar-right" onclick="toggleSidebar('right')">
   <div class="sidebar-inner" onclick="toggleSidebar('right')">
     <div class="container">
-      <h2 class="font-weight-bold">SICK TITLE HERE</h2>
+      <h2 class="font-weight-bold">Be In Contact With Us</h2>
       <hr>
-      <p>Some text goes here then some over there.</p>
-      <p>Repeating some text goes here then some over there.</p>
-      <p><b>Image Here</b></p>
-      <p><img src="static/img/bg/2.jpg" alt="Image" class="mt-2"></p>
+      <p>You can be in contact with us, follow the project news and progress, meet new people, and help us to have a better community!</p>
+      <p>Some of our works are open-source can be found in our github. So, feel free to contribute.</p>
+      <p>You can always join our discord and be part of CookieMP community!</p>
+      <p><b>Links</b></p>
       <hr>
-      <p>
-        <button class="btn btn-cookie">Button</button>
-        <button class="btn btn-outline-cookie">Another One</button>
-        <button class="btn btn-outline-cookie">Don't</button>
-      </p>
+      <div>
+        <a class="nav-link" href="https://discord.gg/M76m6qC">Discord</a>
+        <a class="nav-link" href="https://github.com/CookieMP">Github</a>
+        <a class="nav-link" href="https://t.me/CookieMP">Telegram Channel</a>
+        <a class="nav-link" href="https://www.youtube.com/channel/UCX9xU10GJH6F5uCpu5V1yyw">YouTube Channel</a>
+        <hr>
+        <b>Note:</b> our YouTube channel isn't ready yet so videos are uploaded on iAmir's personal youtube account.
+      </div>
     </div>
   </div>
 </div>
@@ -117,18 +128,39 @@
 <div class="sidebar sidebar-left" onclick="toggleSidebar('left')">
   <div class="sidebar-inner" onclick="toggleSidebar('left')">
     <div class="container">
-      <h2 class="font-weight-bold">SICK TITLE HERE</h2>
+      <h2 class="font-weight-bold">About Us</h2>
       <hr>
-      <p>Some text goes here then some over there.</p>
-      <p>Repeating some text goes here then some over there.</p>
-      <p><b>Image Here</b></p>
-      <p><img src="static/img/bg/2.jpg" alt="Image" class="mt-2"></p>
+      <p>CookieMP is a new super light-weight multiplayer mod for Grand Theft Auto V, made for people who want to play the original not-modified game with their friends.</p>
+      <p>Our goal is keep game's originality and make it light-weight, simple to use and simple to develop a server!</p>
+      <p>Note that CookieMP is in early stage of development and it's not released yet. We will keep you updated with images and videos.</p> 
       <hr>
-      <p>
-        <button class="btn btn-cookie">Button</button>
-        <button class="btn btn-outline-cookie">Another One</button>
-        <button class="btn btn-outline-cookie">Don't</button>
-      </p>
+      <p><b>Media</b></p>
+      <div>
+        <a href="#open-image-modal"><button class="btn btn-outline-cookie">Images</button></a>
+        <div id="open-image-modal" class="modal-window">
+          <div>
+            <a href="#modal-close" title="Close" class="modal-close">close &times;</a>
+            <h1>CookieMP preview images</h1>
+            <div>PS: Images are probably old and we already did some changes after taking them</div>
+            <br/>
+            <a href="http://files.cookiemp.com/photo1.jpg" target="_blank"><img src="http://files.cookiemp.com/photo1.jpg" alt="Image" class="modal-item"></a>
+            <a href="http://files.cookiemp.com/photo2.jpg" target="_blank"><img src="http://files.cookiemp.com/photo2.jpg" alt="Image" class="modal-item"></a>
+            <a href="http://files.cookiemp.com/chatbox-preview.jpg" target="_blank"><img src="http://files.cookiemp.com/chatbox-preview.jpg" alt="Image" class="modal-item"></a>
+          </div>
+        </div>
+        <a href="#open-video-modal"><button class="btn btn-outline-cookie">Videos</button></a>
+        <div id="open-video-modal" class="modal-window">
+          <div>
+            <a href="#modal-close" title="Close" class="modal-close">close &times;</a>
+            <h1>CookieMP preview videos</h1>
+            <div>PS: Videos are probably old and we already did some changes after taking them</div>
+            <br/>
+            <iframe width="315" height="210" src="https://www.youtube.com/embed/ryK4ozhxXHM"></iframe> 
+            <iframe width="315" height="210" src="https://www.youtube.com/embed/1pxCPYjv8Uo"></iframe> 
+            <iframe width="315" height="210" src="https://www.youtube.com/embed/b0DTUR8mgoI"></iframe> 
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
